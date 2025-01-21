@@ -1,4 +1,4 @@
-﻿body {
+body {
     font-family: 'Helvetica Neue', 'Times New Roman', sans-serif;
     background-image: url('marble-4145540_1280.jpg'); /* Add background image URL here */
     background-size: cover; /* Background image covers the entire page */
@@ -16,19 +16,25 @@
 }
 
 .card {
-    background: #808080; /* Szürke szín */
-    border: 4px solid #000; /* Vastagabb fekete keret */
-    border-radius: 10px; /* Kisebb kerekítés a sarkokon */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enyhe árnyék */
+    background-image: url('card.jpg'); /* Add meg a háttérkép URL-jét */
+    background-size: cover; /* A háttérkép teljesen kitölti a kártyát */
+    background-position: center; /* Középre igazítja a háttérképet */
+    background-repeat: no-repeat; /* Nem ismétlődik a háttérkép */
+    /* Meglévő tulajdonságok */
+    border: 4px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-    height: 350px; /* Kártyák magassága */
-    display: flex; /* Kártyák tartalmának középre igazítása */
+    height: 350px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
 }
 
     .card img {
@@ -129,6 +135,12 @@ button {
         transition: transform 0.3s, box-shadow 0.3s; /* Áttűnés beállítása 3D animációhoz */
         margin-top: 10px; /* Hézag a gomb felett */
     }
+
+        button.button4:hover {
+            transform: scale(1.1) rotateY(15deg); /* Enyhe nagyítás és 3D forgatás hover esetén */
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Erősebb árnyék hover esetén */
+        }
+
 
         button.button4:hover {
             transform: scale(1.1) rotateY(15deg); /* Enyhe nagyítás és 3D forgatás hover esetén */
